@@ -1,0 +1,33 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.75.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  server.cpp
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(109,27): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(109,27): warning :   109 |         while ((len = recv(cfd, tmp, sizeof tmp,0))>0);
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(109,27): warning :       |                       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(109,9): warning : this ‘while’ clause does not guard... [-Wmisleading-indentation]
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(109,9): warning :   109 |         while ((len = recv(cfd, tmp, sizeof tmp,0))>0);
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(109,9): warning :       |         ^~~~~
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(110,9): message : ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(110,9): message :   110 |         {
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(110,9): message :       |         ^
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(111,33): warning : comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(111,33): warning :   111 |                 if (total + len < sizeof buf)
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(111,33): warning :       |                     ~~~~~~~~~~~~^~~~~~~~~~~~
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(121,32): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(121,32): warning :   121 |                 int relen = pt - buf;
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(121,32): warning :       |                             ~~~^~~~~
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(147,24): warning : ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(147,24): warning :   147 |                 file = "./";
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(147,24): warning :       |                        ^~~~
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(168,64): warning : conversion from ‘__off_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(168,64): warning :   168 |                 sendHead(cfd, 200, "OK", getFileType(file), st.st_size);
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(168,64): warning :       |                                                             ~~~^~~~~~~
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(181,31): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(181,31): warning :   181 |                 int len = read(fd, buf, sizeof buf);
+C:\Users\RYT\Desktop\Project1\Project1\server.cpp(181,31): warning :       |                           ~~~~^~~~~~~~~~~~~~~~~~~~~
+  正在链接对象
+  Project1.vcxproj -> C:\Users\RYT\Desktop\Project1\Project1\bin\x64\Debug\Project1.out
